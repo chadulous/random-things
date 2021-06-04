@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>What in the HECK is my ip</title>
+</head>
+<body>
+	<div id='info_section'>
+		your ip is:
+    {% for data in data %}
+        <button class='{{ paid }}'>{{ data }}</button>
+    {% endfor %}
+		<br>
+		<p> {{ message }} </p>
+		<button class={{ hide }} onclick='{{ onclaclk }}'>{{ butmes }}</button>
+	</div>
+<style>
+	.ip{
+		filter: blur(8px);
+  	-webkit-filter: blur(8px);
+	}
+	.hidden{
+		visibility: hidden
+	}
+	.visible{
+		visibility: visible
+	}
+</style>
+</body>
+</html>
