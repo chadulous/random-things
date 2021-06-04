@@ -1,10 +1,10 @@
+import os
+os.system('pip install --user poetry')
+os.system('poetry install')
 import requests
 from flask import Flask, render_template, redirect, jsonify, request
 from gevent.pywsgi import WSGIServer
 import json
-import os
-os.system('pip install --user poetry')
-os.system('poetry install')
 code = False
 username = ''
 gid = ''
